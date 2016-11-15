@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle brainfuck-debug",
+        "command": "brainfuck-debug:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "brainfuck-debug",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "brainfuck-debug:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
