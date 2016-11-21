@@ -8,10 +8,10 @@
   "activationCommands": {
     "atom-workspace": "brainfuck-debug:toggle"
   },
-  "repository": "https://github.com/atom/brainfuck-debug",
+  "repository": "https://github.com/bng5/brainfuck-debug",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": "^1.12.2"
   },
   "dependencies": {
   }

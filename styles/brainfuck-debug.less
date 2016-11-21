@@ -1,8 +1,26 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
-// for a full listing of what's available.
+@import "variables";
+
 @import "ui-variables";
+@import "syntax-variables";
 
 .brainfuck-debug {
+  .error {
+    color: @text-color-error;
+  }
+}
+
+// Remember: no default styling is provided for highlight decorations.
+.highlight-green .region {
+  color: red;
+  background-color: @background-color-info;
+}
+
+.highlight-blue .region {
+  color: red;
+  background-color: @background-color-info;
+}
+
+.highlight-red .region {
+  color: red;
+  background-color: @background-color-info;
 }
