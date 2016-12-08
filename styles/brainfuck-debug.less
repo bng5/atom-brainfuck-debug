@@ -1,26 +1,75 @@
 @import "variables";
 
+/*
 @import "ui-variables";
 @import "syntax-variables";
+*/
 
 .brainfuck-debug {
+  .tape {
+      background-color: black;
+      color: #bbbbbb;
+      font-family: monospace;
+      /*height: 3em;*/
+      overflow: hidden;
+      position: relative;
+      > span {
+          border: 3px solid gray;
+          box-sizing: content-box;
+          display: block;
+          height: 2em;
+          position: absolute;
+          width: 36px;
+      }
+      > em {
+          display: block;
+          padding-top: 3em;
+          text-align: center;
+          white-space: pre-wrap;
+      }
+      ul {
+          cursor: move;
+          display: block;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          white-space: nowrap;
+          position: absolute;
+          top: 3px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          &.soft {
+              transition: left 0.3s;
+              transition-timing-function: linear;
+          }
+          li {
+              width: 3em;
+              display: inline-block;
+              span {
+                  display: block;
+                  line-height: 2em;
+                  text-align: center;
+              }
+          }
+      }
+  }
   .error {
     color: @text-color-error;
   }
 }
 
-// Remember: no default styling is provided for highlight decorations.
 .highlight-green .region {
-  color: red;
-  background-color: @background-color-info;
+  background-color: @green-color;
 }
 
 .highlight-blue .region {
-  color: red;
-  background-color: @background-color-info;
+  background-color: @blue-color;
 }
 
 .highlight-red .region {
-  color: red;
-  background-color: @background-color-info;
+  background-color: @red-color;
 }
