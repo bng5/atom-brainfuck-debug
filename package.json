@@ -2,8 +2,10 @@
   "name": "brainfuck-debug",
   "main": "./lib/brainfuck-debug",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "brainfuck debugger",
   "keywords": [
+    "brainfuck",
+    "debug"
   ],
   "activationCommands": {
     "atom-workspace": "brainfuck-debug:toggle"
@@ -14,5 +16,6 @@
     "atom": "^1.12.2"
   },
   "dependencies": {
+    "brainfuck-step": "0.0.0"
   }
 }

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('atom://brainfuck-debug/fonts/icomoon.ttf') format('truetype'),
+        url('atom://brainfuck-debug/fonts/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
