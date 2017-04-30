@@ -1,11 +1,7 @@
-@import "variables";
-
-/*
-@import "ui-variables";
 @import "syntax-variables";
-*/
 
 .brainfuck-debug {
+
   .tape {
       background-color: black;
       color: #bbbbbb;
@@ -13,6 +9,7 @@
       /*height: 3em;*/
       overflow: hidden;
       position: relative;
+      
       > span {
           border: 3px solid gray;
           box-sizing: content-box;
@@ -21,12 +18,14 @@
           position: absolute;
           width: 36px;
       }
+      
       > em {
           display: block;
           padding-top: 3em;
           text-align: center;
           white-space: pre-wrap;
       }
+      
       ul {
           cursor: move;
           display: block;
@@ -42,13 +41,16 @@
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
+          
           &.soft {
               transition: left 0.3s;
               transition-timing-function: linear;
           }
+          
           li {
               width: 3em;
               display: inline-block;
+
               span {
                   display: block;
                   line-height: 2em;
@@ -57,19 +59,90 @@
           }
       }
   }
+  
+  .input-range {
+    display: inline;
+    width: 10em;
+    // position: relative;
+    // padding: 0;
+    // margin: 0 3em;
+    
+    // &:before {
+    //   content: "\1f422";
+    //   font-family: 'icomoon';
+    //   font-size: 1.5em;
+    //   position: absolute;
+    //   top: -0.5em;
+    //   left: -1.5em;
+    //   // display: inline-block;
+    //   // float: left;
+    // }
+    //
+    // &:after {
+    //   content: "\1f407";
+    //   font-family: 'icomoon';
+    //   font-size: 1.5em;
+    //   position: absolute;
+    //   top: -0.5em;
+    //   right: -1.5em;
+    //   display: inline;
+    //   // float: right;
+    // }
+  }
+
   .error {
     color: @text-color-error;
   }
+  
+  // .icomoon {
+  //   font-family: 'icomoon' !important;
+  //   speak: none;
+  //   font-style: normal;
+  //   font-weight: normal;
+  //   font-variant: normal;
+  //   text-transform: none;
+  //   line-height: 1;
+  //
+  //   letter-spacing: 0;
+  //   -webkit-font-feature-settings: "liga";
+  //   -moz-font-feature-settings: "liga=1";
+  //   -moz-font-feature-settings: "liga";
+  //   -ms-font-feature-settings: "liga" 1;
+  //   font-feature-settings: "liga";
+  //   -webkit-font-variant-ligatures: discretionary-ligatures;
+  //   font-variant-ligatures: discretionary-ligatures;
+  //
+  //   /* Better Font Rendering =========== */
+  //   -webkit-font-smoothing: antialiased;
+  //   -moz-osx-font-smoothing: grayscale;
+  // }
+  //
+  // .icon-turtle:before {
+  //   content: "\1f422";
+  // }
+  //
+  // .icon-rabbit:before {
+  //   content: "\1f407";
+  // }
+  
+  .icono {
+    width: @component-icon-size;
+    height: @component-icon-size;
+    // display: inline;
+    fill: currentColor;
+    vertical-align: middle;
+// @text-color-subtle
+// @text-color-highlight
+// @text-color-selected;
+  }
 }
 
-.highlight-green .region {
-  background-color: @green-color;
-}
+atom-text-editor::shadow {
 
-.highlight-blue .region {
-  background-color: @blue-color;
-}
-
-.highlight-red .region {
-  background-color: @red-color;
+  .highlight-bf-pos {
+    
+    .region {
+      background-color: @syntax-color-renamed;
+    }
+  }
 }
