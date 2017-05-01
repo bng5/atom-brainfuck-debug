@@ -5,3 +5,4 @@ lib/bfstep/
 extras/
 find.html
 lib/brainfuck-step
+bf/
