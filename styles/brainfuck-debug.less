@@ -5,7 +5,7 @@
   .tape {
       background-color: black;
       color: #bbbbbb;
-      font-family: monospace;
+      // font-family: monospace;
       /*height: 3em;*/
       overflow: hidden;
       position: relative;
@@ -47,6 +47,7 @@
               transition-timing-function: linear;
           }
           
+          
           li {
               width: 3em;
               display: inline-block;
@@ -55,7 +56,28 @@
                   display: block;
                   line-height: 2em;
                   text-align: center;
+
+                  kbd {
+                    font-family: inherit;
+                    font-stretch: condensed;
+                    text-transform: uppercase;
+                  }
               }
+          }
+          
+          &.dec,
+          &.hex {
+            font-family: monospace;
+          }
+          
+          &.hex {
+            li {
+              span {
+              }
+            }
+          }
+
+          &.chr {
           }
       }
   }
@@ -142,7 +164,13 @@ atom-text-editor::shadow {
   .highlight-bf-pos {
     
     .region {
-      background-color: @syntax-color-renamed;
+      background-color: @syntax-result-marker-color;//@syntax-selection-color;//@syntax-color-renamed;
+      color: black;//spin(@syntax-color-renamed, 180);
+      border: 1px solid @syntax-color-added;
+      
+      &.error {
+        border: 1px solid @syntax-color-removed;
+      }
     }
   }
 }
