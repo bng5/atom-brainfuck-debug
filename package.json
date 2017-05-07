@@ -2,7 +2,7 @@
   "name": "brainfuck-debug",
   "main": "./lib/brainfuck-debug",
   "version": "0.0.0",
-  "description": "brainfuck debugger",
+  "description": "brainfuck debugger for Atom text editor.",
   "keywords": [
     "brainfuck",
     "debug"
@@ -16,6 +16,6 @@
     "atom": "^1.12.2"
   },
   "dependencies": {
-    "brainfuck-step": "0.0.0"
+    "brainfuck-step": "file:///home/pablo/nodejs/bfstep"
   }
 }
